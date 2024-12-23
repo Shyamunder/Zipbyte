@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Options</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .payment-option {
+            margin: 10px;
+            padding: 15px;
+            font-size: 18px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #f8f8f8;
+        }
+        .payment-option:hover {
+            background-color: #e0e0e0;
+        }
+        #payment-details {
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Choose Your Payment Method</h1>
+
+    <div class="payment-option" id="upi" onclick="selectPaymentMethod('UPI')">UPI Payment</div>
+    <div class="payment-option" id="cash" onclick="selectPaymentMethod('Cash')">Cash on Delivery</div>
+
+    <div id="payment-details">
+        <h3 id="payment-method-header"></h3>
+        <div id="upi-details" style="display: none;">
+            <p>To pay via UPI, scan the QR code or use your UPI app:</p>
+            <img src="E:\shyam_C_programing\project\Payment QR code.jpeg" />
+        </div>
+        <div id="cash-details" style="display: none;">
+            <p>You will pay cash upon delivery of your order.</p>
+        </div>
+    </div>
+
+    <script>
+        function selectPaymentMethod(paymentMethod) {
+            document.getElementById('payment-method-header').innerText = `You selected ${paymentMethod} Payment`;
+            document.getElementById('payment-details').style.display = 'block';
+
+            // Hide all payment details first
+            document.getElementById('upi-details').style.display = 'none';
+            document.getElementById('cash-details').style.display = 'none';
+
+            if (paymentMethod === 'UPI') {
+                document.getElementById('upi-details').style.display = 'block';
+            } else if (paymentMethod === 'Cash') {
+                document.getElementById('cash-details').style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
