@@ -16,19 +16,24 @@
     <h2>Our Menu</h2>
     <ul>
       <li class="menu-item">
-        <div class="menu-item-content">
-          <img src="images/samosa-recipe.jpg" alt="Samosa" class="menu-image">
-          <div class="menu-item-details">
-            <h3>Samosa</h3>
-            <p>A crispy pastry filled with spicy potatoes.</p>
-            <div class="quantity-control">
-              <button class="decrement" onclick="updateQuantity('samosa', -1)">-</button>
-              <input type="number" class="quantity" id="samosa-quantity" value="0" readonly>
-              <button class="increment" onclick="updateQuantity('samosa', 1)">+</button>
-            </div>
-            <button onclick="orderItem('Samosa')">Order Now</button>
-          </div>
+          <div class="menu-item">
+        <img src="images/samosa-recipe.jpg" alt="Samosa" class="menu-image">
+        <h3>Samosa</h3>
+<div>
+        <p> A samosa is a small, tasty snack that is usually made with a crispy, triangle-shaped pastry filled with delicious ingredients.
+ The most common filling is a mixture of potatoes, peas, and spices like cumin, coriander, and turmeric. 
+It's often served with chutney, a sweet or spicy sauce, to dip it in.</p>
+</div>
+<br>
+        <div class="quantity-control">
+          <button class="decrement" onclick="updateQuantity('samosa', -1)">-</button>
+          <input type="number" class="quantity" id="samosa-quantity" value="0" readonly>
+          <button class="increment" onclick="updateQuantity('samosa', 1)">+</button>
         </div>
+<br>
+        <button class="order-button" onclick="orderItem('Samosa')">Order Now</button>
+      </div>
+
       </li>
 
       <li class="menu-item">
@@ -36,12 +41,17 @@
           <img src="images/vada-pav-3.jpg" alt="Vada Pav" class="menu-image">
           <div class="menu-item-details">
             <h3>Vada Pav</h3>
-            <p>A spicy potato patty served in a bun with chutney.</p>
+<div>
+            <p>. It consists of a spicy potato fritter (called vada) that is deep-fried and placed inside a soft bread roll (called pav).
+        It is often served with chutneys—spicy, sweet, and tangy—and sometimes green chilies for extra flavor.</p>
+</div>
+<br>
             <div class="quantity-control">
               <button class="decrement" onclick="updateQuantity('vada-pav', -1)">-</button>
               <input type="number" class="quantity" id="vada-pav-quantity" value="0" readonly>
               <button class="increment" onclick="updateQuantity('vada-pav', 1)">+</button>
             </div>
+<br>
             <button onclick="orderItem('Vada Pav')">Order Now</button>
           </div>
         </div>
@@ -52,12 +62,17 @@
           <img src="images/chai.jpg" alt="Chai" class="menu-image">
           <div class="menu-item-details">
             <h3>Chai</h3>
-            <p>Hot Indian tea with spices.</p>
+<div>
+            <p> tea made by boiling black tea leaves with water, milk, and sugar. 
+It is often flavored with spices like ginger, cardamom, cloves, and cinnamon, giving it a rich and warm taste.</p>
+</div>
+<br>
             <div class="quantity-control">
               <button class="decrement" onclick="updateQuantity('chai', -1)">-</button>
               <input type="number" class="quantity" id="chai-quantity" value="0" readonly>
               <button class="increment" onclick="updateQuantity('chai', 1)">+</button>
             </div>
+<br>
             <button onclick="orderItem('Chai')">Order Now</button>
           </div>
         </div>
@@ -68,12 +83,18 @@
           <img src="images/pizza 2.jpeg" alt="Pizza" class="menu-image">
           <div class="menu-item-details">
             <h3>Pizza</h3>
-            <p>Pizza with fully loaded cheese.</p>
+<div>
+            <p>Pizza is a dish made with a flat, round base of baked dough.
+ It is topped with tomato sauce, cheese, and various other ingredients like vegetables, meats, and herbs.
+ The pizza is then baked in an oven until the crust is crispy and the cheese melts. </p>
+</div>
+<br>
             <div class="quantity-control">
               <button class="decrement" onclick="updateQuantity('pizza', -1)">-</button>
               <input type="number" class="quantity" id="pizza-quantity" value="0" readonly>
               <button class="increment" onclick="updateQuantity('pizza', 1)">+</button>
             </div>
+<br>
             <button onclick="orderItem('Pizza')">Order Now</button>
           </div>
         </div>
@@ -84,12 +105,18 @@
           <img src="images/pav bhaji.jpg" alt="Pav Bhaji" class="menu-image">
           <div class="menu-item-details">
             <h3>Pav Bhaji</h3>
-            <p>Snack with bold, tangy flavors and cheese.</p>
+<div>
+            <p>Pav bhaji is a food that includes a thick, spicy vegetable curry (called bhaji) served with soft bread rolls (called pav).
+ The bhaji is made by mashing vegetables like potatoes, tomatoes, peas, and capsicum, and cooking them with butter and flavorful spices.
+ The pav is toasted with butter until golden and crispy.</p>
+</div>
+<br>
             <div class="quantity-control">
               <button class="decrement" onclick="updateQuantity('pav-bhaji', -1)">-</button>
               <input type="number" class="quantity" id="pav-bhaji-quantity" value="0" readonly>
               <button class="increment" onclick="updateQuantity('pav-bhaji', 1)">+</button>
             </div>
+<br>
             <button onclick="orderItem('Pav Bhaji')">Order Now</button>
           </div>
         </div>
@@ -100,7 +127,11 @@
           <img src="images/bhel puri.webp" alt="Bhel Puri" class="menu-image">
           <div class="menu-item-details">
             <h3>Bhel Puri</h3>
-            <p>Crispy bhel served in a red-rimmed white bowl.</p>
+<div>
+            <p>Bhel puri is a tasty snack made with puffed rice,chopped vegetables like onions, tomatoes, 
+               and boiled potatoes, and tangy tamarind chutney.
+              It is crispy, spicy, sweet, and sour, all in one bite.</p>
+</div>
             <br>
             <div class="quantity-control">
               <button class="decrement" onclick="updateQuantity('bhel-puri', -1)">-</button>
@@ -118,12 +149,18 @@
           <img src="images/momos.jpg" alt="Momos" class="menu-image">
           <div class="menu-item-details">
             <h3>Momos</h3>
-            <p>Steamed dumplings with spicy filling.</p>
+<div>
+            <p> They are made with a thin dough filled with vegetables, chicken, or meat. 
+               The dumplings are then steamed, fried, or sometimes served in soup.
+                Momos are usually enjoyed with spicy sauces or chutneys.</p>
+</div>
+<br>
             <div class="quantity-control">
               <button class="decrement" onclick="updateQuantity('momos', -1)">-</button>
               <input type="number" class="quantity" id="momos-quantity" value="0" readonly>
               <button class="increment" onclick="updateQuantity('momos', 1)">+</button>
             </div>
+<br>
             <button onclick="orderItem('Momos')">Order Now</button>
           </div>
         </div>
