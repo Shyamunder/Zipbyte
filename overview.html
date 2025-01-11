@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Overview</title>
+  <link rel="stylesheet" href="overview.css">
+</head>
+<body>
+  <div class="order-container">
+    <h1>Order Overview</h1>
+    <table class="order-table">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody id="order-items">
+        <!-- Order items will be populated here -->
+      </tbody>
+    </table>
+    
+    <div class="order-summary">
+      <p><strong>Total Quantity:</strong> <span id="total-quantity">0</span></p>
+      <p><strong>Total Amount:</strong> $<span id="total-amount">0.00</span></p>
+    
+    </div>
+  </div>
+
+  <script src="overview.js"></script>
+</body>
+</html>
