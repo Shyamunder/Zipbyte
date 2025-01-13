@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.order-list {
+    margin-top: 20px;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.item-details h3 {
+    margin: 0;
+    color: #555;
+}
+
+.item-details p {
+    margin: 5px 0;
+    color: #777;
+}
+
+.price {
+    font-weight: bold;
+    color: #333;
+}
+
+.total {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.total h2 {
+    color: #333;
+}

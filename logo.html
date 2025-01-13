@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo on Top-Left Corner</title>
+    <style>
+        /* Body styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Subtle gradient background */
+            height: 100vh;
+        }
+
+        /* Logo container */
+        .logo-container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            border-radius: 10px; /* Slightly rounded corners */
+        }
+
+        /* Logo content */
+        .logo-container img {
+            width: 80%; /* Adjust to fit within the square */
+            height: auto;
+        }
+
+        .logo-container h1 {
+            color: #3a3a3a;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo Container -->
+    <div class="logo-container">
+        <!-- You can replace this text with an image -->
+        <img src="images/new logo zipebite.webp" alt="Logo">
+    </div>
+</body>
+</html>

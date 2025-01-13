@@ -1,3 +1,16 @@
+.quantity-control {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.quantity {
+  width: 30px;
+  text-align: center;
+  margin: 0 5px;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -12,6 +25,7 @@ header {
   padding: 20px;
   text-align: center;
 }
+
 
 
 h1 {
@@ -54,6 +68,7 @@ img {
   height: 120px;
   width: 120px;
   margin-left: 500px;
+  margin-bottom: 20px;
 }
 
 button {
@@ -90,3 +105,4 @@ footer {
   bottom: 0;
   width: 100%;
 }
+

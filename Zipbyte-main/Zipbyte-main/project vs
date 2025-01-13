@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Canteen</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Food Canteen</h1>
+    <p>Delicious food at your service!</p>
+  </header>
+  
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <ul>
+      <li>
+        <h3>Samosa</h3>
+        <p>A crispy pastry filled with spicy potatoes.</p>
+        <button onclick="orderItem('Samosa')">Order Now</button>
+      </li>
+      <li>
+        <h3>Vada Pav</h3>
+        <p>A spicy potato patty served in a bun with chutney.</p>
+        <button onclick="orderItem('Vada Pav')">Order Now</button>
+      </li>
+      <li>
+        <h3>Chai masala </h3>
+        <p>Hot Indian tea with spices.</p>
+        <button onclick="orderItem('Chai')">Order Now</button>
+      </li>
+       <li>
+        <h3>pizza </h3>
+        <p>pizza with full loaded chezz.</p>
+        <button onclick="orderItem('pizza')">Order Now</button>
+      </li>
+       <li>
+        <h3>  pav bhaji</h3>
+        <p> snack with bold,tangy flavors with chezz.</p>
+        <button onclick="orderItem('pav bhaji')">Order Now</button>
+      </li>
+         <li>
+        <h3>bhel puri </h3>
+        <p>crisp baked ouri in red rimmed white bowl.</p>
+        <button onclick="orderItem('bhel puri')">Order Now</button>
+      </li>
+         <li>
+        <h3> momo </h3>
+        <p>make with stem and have stuffing init.</p>
+        <button onclick="orderItem('momo')">Order Now</button>
+      </li>
+      
+
+    </ul>
+  </section>
+
+  <section id="order-details">
+    <h2>Your Order</h2>
+    <p id="order-summary">No items ordered yet.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Food Canteen. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  header {
+    background-color: #ff6347;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  #menu {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #ff4500;
+  }
+  
+  #order-details {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  
+  function orderItem(item) {
+    const orderSummary = document.getElementById("order-summary");
+    const currentOrder = orderSummary.textContent;
+  
+    if (currentOrder === "No items ordered yet.") {
+      orderSummary.textContent = `You have ordered: ${item}`;
+    } else {
+      orderSummary.textContent = `${currentOrder}, ${item}`;
+    }
+  }
+  
+
+
+
